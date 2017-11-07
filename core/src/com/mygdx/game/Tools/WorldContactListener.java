@@ -78,6 +78,8 @@ public class WorldContactListener implements ContactListener {
                         if(playScreen.mainlives<=1)
                         ((Enemy) fixA.getUserData()).eat();
                     }
+                                BananaKong.manager.get("audio/punch.mp3", Sound.class).play();
+
                     lifecount++;
                     if(lifecount%4==0)
                     {
