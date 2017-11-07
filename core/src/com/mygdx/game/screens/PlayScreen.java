@@ -670,13 +670,13 @@ public class PlayScreen implements Screen {
             timecount += delta;
 
             //to change the world
-            if(player.b2body.getPosition().x>10 && world1 == false && world2 == false)
+            if(player.b2body.getPosition().x>120 && world1 == false && world2 == false)
             {
                 world1 = true;
                 scorecounter();
                 worldcreator();
             }
-            else if(player.b2body.getPosition().x>10 && world1 == true && world2 == false)
+            else if(player.b2body.getPosition().x>120 && world1 == true && world2 == false)
             {
                 world2 = true;
                 scorecounter();
